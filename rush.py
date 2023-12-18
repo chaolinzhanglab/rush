@@ -9,7 +9,7 @@ import warnings
 # disable warning
 warnings.filterwarnings("ignore")
 
-def analyze_screen(inputDir, oligoLibDir):
+def rush(inputDir, oligoLibDir):
 	# set output directory 
 	outputPath = os.path.join(inputDir, 'screen_results/')
 
@@ -135,7 +135,7 @@ if __name__ == '__main__':
 
 	args = parser.parse_args()
 
-	analyze_screen(args.inputDir, args.oligoLibDir)
+	rush(args.inputDir, args.oligoLibDir)
 
 
 
